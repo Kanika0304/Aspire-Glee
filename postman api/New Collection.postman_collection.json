@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "452c9622-aa6f-49c7-b8ff-d4610bf08675",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33242967"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"12213053@nitkkr.ac.in\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/v1/auth/eduParent/sendOTP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"eduParent",
+						"sendOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"otp\":510944,\r\n    \"email\":\"12213053@nitkkr.ac.in\",\r\n    \"parentName\":\"rallj\",\r\n    \"password\":\"1\",\r\n    \"phoneNumber\":\"7238\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/v1/auth/eduParent/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"eduParent",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\":\"1\",\r\n    \"email\":\"12213053@nitkkr.ac.in\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/v1/auth/eduParent/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"eduParent",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTU2YjAzNTRjZGRjOTQ2NGNhNjA3MyIsImlhdCI6MTcyMjExNjg5NiwiZXhwIjoxNzIyMjAzMjk2fQ.cJBE5Jz0sUuvIJM7LIDtGf9xyeiGur4YpxySZLYgbeg\",\r\n\r\n\r\n    \"studentName\":\"dlajd\", \"familyIncome\":\"49382398\", \"isDisabled\":\"No\", \"grade\":8, \"percentage\":9,\"studentId\":\"11\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/v1/school/addStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"school",
+						"addStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\":\"11\", \"grade\":\"32\", \"percentage\":\"23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/v1/volunteer/addData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"volunteer",
+						"addData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTUyOWQ3Mjg1ZTM5MjMwYTFiZmU1YyIsImlhdCI6MTcyMjExMTc0MSwiZXhwIjoxNzIyMTk4MTQxfQ.NXH0buU_DpOUlBh4Rq-aFXhCEK-mlMnaOwAltET4_h4\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/v1/eduParent/getStudentsDonatedByParent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"eduParent",
+						"getStudentsDonatedByParent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTU2YjAzNTRjZGRjOTQ2NGNhNjA3MyIsImlhdCI6MTcyMjExNjg5NiwiZXhwIjoxNzIyMjAzMjk2fQ.cJBE5Jz0sUuvIJM7LIDtGf9xyeiGur4YpxySZLYgbeg\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8800/api/v1/school/retrieveSchoolData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8800",
+					"path": [
+						"api",
+						"v1",
+						"school",
+						"retrieveSchoolData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
